@@ -4,7 +4,7 @@ This Hadoop/MapReduce tool splits and partitions Web archive records in (W)ARC(.
 
 It runs in **two phases**:
 
-1. *Partition:* Files are split up and records are partitioned into files without headers of arbitraty sizes, depending on the input. This ia a map only job.
+1. *Partition:* Files are split up and records are partitioned into files without headers of arbitrary sizes, depending on the input. This ia a map only job.
 2. *Merge:* The partitioned files are merged into valid (W)ARC files with headers of fixed sizes with block size set two the file size.
 
 It uses the [HadoopConcatGz](https://github.com/helgeho/HadoopConcatGz) input format to read the compressed (W)ARC files.
